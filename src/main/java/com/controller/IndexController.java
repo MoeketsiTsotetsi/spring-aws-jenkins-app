@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 public class IndexController {
 	
-	@RequestMapping(value = "")
+	@RequestMapping(value = "/")
 	public ModelAndView showIndexPage() {
 		ModelAndView mav = new ModelAndView();
 		mav.setViewName("index.jsp");
