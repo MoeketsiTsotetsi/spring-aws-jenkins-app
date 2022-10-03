@@ -10,10 +10,7 @@ public class IndexController {
 	
 	@RequestMapping("/")
 	
-	public ModelAndView showIndexPage() {
-		ModelAndView mav = new ModelAndView();
-		mav.setViewName("index.jsp");
-
-		return mav;
+	public String showIndexPage() {
+		return "index";
 	}
 }
