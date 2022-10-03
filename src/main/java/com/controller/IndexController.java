@@ -5,10 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class IndexController {
+	@GetMapping("")
+	public String welcome() {
+		return "run /welcome to test the application";
+	}
 
 	
-	@GetMapping("/")
-	
+	@GetMapping("/tools")
 	public String showIndexPage() {
 		return "index";
 	}
